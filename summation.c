@@ -12,7 +12,8 @@ int main()
         scanf("%d", &numbers[i]);
     }
 
-    int sum = 0;
+    long long sum = 0;
+
     for (int j = 0; j < n; j++)
     {
         sum += numbers[j];
@@ -20,11 +21,12 @@ int main()
 
     if (sum < 0)
     {
-        printf("%d", sum * -1);
+        printf("%lld", sum * -1);
     }
+    
     else
     {
-        printf("%d", sum);
+        printf("%lld", sum);
     }
 
     return 0;
