@@ -2,19 +2,17 @@
 
 int main()
 {
-    long long days;
-    scanf("%lld", &days);
+    int input_days;
+    scanf("%d", &input_days);
 
-    long long years = (days / 30) / 12;
-    long long rest_days = days - (years * 365);
+    int years = input_days / 365;
 
-    long long months = rest_days / 30;
+    int rest_days = input_days - (years * 365);
 
-    long long new_days = rest_days - (months * 30);
+    int months = rest_days / 30;
 
-    printf("%lld years\n", years);
-    printf("%lld months \n", months);
-    printf("%lld days \n", new_days);
+    int days = rest_days - (months * 30);
 
+    printf("%d years\n%d months\n%d days", years, months, days);
     return 0;
 }
