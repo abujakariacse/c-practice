@@ -14,6 +14,12 @@ int main()
     int index;
     scanf("%d", &index);
 
+    if (index < 0 || index > length)
+    {
+        printf("Input a valid index");
+        return 0;
+    }
+
     // METHOD - 1
     // for (int i = index + 1; i < length; i++)
     // {
@@ -21,7 +27,7 @@ int main()
     // }
 
     // METHOD - 2
-    for (int i = index; i < length; i++)
+    for (int i = index; i < length - 1; i++)
     {
         a[i] = a[i + 1];
     }
