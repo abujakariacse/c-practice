@@ -11,6 +11,7 @@ int main()
         scanf("%d", &a[i]);
     }
 
+    // Loop will be stopped when i & j will same value
     for (int i = 0, j = length - 1; i <= j; i++, j--)
     {
         int temp = a[i];
