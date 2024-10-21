@@ -1,1 +1,0 @@
-printf("After copy\n");
