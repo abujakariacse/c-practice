@@ -11,9 +11,18 @@ int main()
     char str2[10] = "abcdefgh";
 
     // string input
-    char str3[10];
-    scanf("%s", str3);
+    char str3[20];
 
-    printf("%s", str3);
+    // if we want to take string input with ' '(whitespace) we have to use "%[^\n]s".
+    // scanf("%[^\n]s", str3);
+
+    char str4[10];
+
+    // another method to get input (varibleName, variableSize, stdin - standard input)
+    // gets(variableName)
+    fgets(str4, sizeof(str4), stdin);
+
+    // puts(variableName)
+    fputs(str4, stdout);
     return 0;
 }
